@@ -1,0 +1,17 @@
+body {
+}
+p {
+	color:#474747;
+	font-family:"Courier", serif;
+	font-size: 1.2em;
+}
+h1, h2, h3, h4 {
+	color:#474747;
+	font-family:"Anton", sans-serif;
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
