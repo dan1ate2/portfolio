@@ -1,5 +1,6 @@
 body {
 	padding-top: 80px;
+	position: relative;
 }
 p {
 	color:#474747;
@@ -18,10 +19,16 @@ h1, h2, h3, h4 {
 .navbar-brand :hover {
 	background-color: #F1592A;
 }
+#home, #portfolio, #portfolio-web, #portfolio-graphic-design, #portfolio-seo, #about, #contact {
+/*	padding-top: 80px;
+*/}
 #home {
 }
 #portfolio {
 }
+	#portfolio-web {}
+	#portfolio-graphic-design {}
+	#portfolio-seo {}
 #about {
 }
 #contact {
