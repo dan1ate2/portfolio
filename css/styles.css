@@ -1,4 +1,5 @@
 body {
+	padding-top: 80px;
 }
 p {
 	color:#474747;
@@ -9,6 +10,24 @@ h1, h2, h3, h4 {
 	color:#474747;
 	font-family:"Anton", sans-serif;
 }
+
+/* Nav */
+.navbar-brand {
+	padding: 0 15px; /* bootstrap overwrite */
+}
+.navbar-brand :hover {
+	background-color: #F1592A;
+}
+#home {
+}
+#portfolio {
+}
+#about {
+}
+#contact {
+}
+
+/* Responsive */
 @media (min-width: 768px) {
 }
 @media (min-width: 992px) {
