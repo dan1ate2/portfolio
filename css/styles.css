@@ -1,6 +1,6 @@
 body {
-	padding-top: 80px;
-	position: relative;
+/*	padding-top: 80px;
+*/	position: relative;
 }
 p {
 	color:#474747;
@@ -26,8 +26,8 @@ a {
 }
 #portfolio-web {}
 #portfolio-graphic-design {
-	background-color: #3399ff;
-}
+/*	background-color: #3399ff;
+*/}
 #portfolio-seo {}
 #about {
 }
@@ -35,13 +35,35 @@ a {
 }
 
 /* Containers, Columns */
-
+.blue-fw {
+	background-color: #3399ff;
+	width: 100%;
+}
+.grey-fw {
+	background-color: #ccc;
+	width: 100%;
+}
 
 /* Responsive */
+@media (max-width: 297px) {
+	.below-nav-pad {
+		margin-top: 95px;
+	}
+}
+@media (min-width: 298px) {
+	.below-nav-pad {
+		margin-top: 51px;
+	}
+}
 @media (min-width: 768px) {
-	#portfolio-web, #portfolio-graphic-design, #portfolio-seo, #about, #contact {
-		padding: 25px 0;
-		min-height: 300px;
+	.below-nav-pad {
+		margin-top: 51px;
+	}
+	.blue-fw {
+		min-height: 350px;
+	}
+	.grey-fw {
+		min-height: 350px;
 	}
 }
 @media (min-width: 992px) {
