@@ -11,31 +11,38 @@ h1, h2, h3, h4 {
 	color:#474747;
 	font-family:"Anton", sans-serif;
 }
+a {
+	color: #F1592A;
+}
 
 /* Nav */
 .navbar-brand {
 	padding: 0 15px; /* bootstrap overwrite */
 }
 .navbar-brand :hover {
-	background-color: #F1592A;
+	background-color: #000;
 }
-#home, #portfolio, #portfolio-web, #portfolio-graphic-design, #portfolio-seo, #about, #contact {
-/*	padding-top: 80px;
-*/}
-#home {
+#portfolio-web, #portfolio-graphic-design, #portfolio-seo, #about, #contact {
 }
-#portfolio {
+#portfolio-web {}
+#portfolio-graphic-design {
+	background-color: #3399ff;
 }
-	#portfolio-web {}
-	#portfolio-graphic-design {}
-	#portfolio-seo {}
+#portfolio-seo {}
 #about {
 }
 #contact {
 }
 
+/* Containers, Columns */
+
+
 /* Responsive */
 @media (min-width: 768px) {
+	#portfolio-web, #portfolio-graphic-design, #portfolio-seo, #about, #contact {
+		padding: 25px 0;
+		min-height: 300px;
+	}
 }
 @media (min-width: 992px) {
 }
