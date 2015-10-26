@@ -1,7 +1,8 @@
 body {
-/*	padding-top: 80px;
-*/	position: relative;
+	position: relative;
 }
+
+/* Text, links */
 p {
 	color:#474747;
 	font-family:"Courier", serif;
@@ -11,62 +12,154 @@ h1, h2, h3, h4 {
 	color:#474747;
 	font-family:"Anton", sans-serif;
 }
+.grey-fw p, .grey-fw h1, .grey-fw h2, .grey-fw h3, .grey-fw h4 {
+	color: #ececec;
+}
 a {
+	color: #3399ff;
+	font-weight: bold;
+}
+a:hover {
 	color: #F1592A;
+	font-weight: bold;
+	text-decoration: none;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover { /* bootstrap overwrite: nav link; */
+	color: #3399ff;
+}
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover { /* bootstrap overwrite: nav hover; */
+	color: #F1592A;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus { /* bootstrap overwrite */
+	background-color: #cecece;
 }
 
 /* Nav */
-.navbar-brand {
-	padding: 0 15px; /* bootstrap overwrite */
+.navbar-brand { /* bootstrap overwrite */
+	padding: 0 15px; 
 }
 .navbar-brand :hover {
 	background-color: #000;
 }
-#portfolio-web, #portfolio-graphic-design, #portfolio-seo, #about, #contact {
-}
-#portfolio-web {}
-#portfolio-graphic-design {
-/*	background-color: #3399ff;
-*/}
-#portfolio-seo {}
-#about {
-}
-#contact {
-}
 
 /* Containers, Columns */
-.blue-fw {
-	background-color: #3399ff;
-	width: 100%;
+.white-fw {
+	background-color: #fff;
 }
 .grey-fw {
-	background-color: #ccc;
+	background-color: #333;
+}
+.white-fw, .grey-fw {
 	width: 100%;
+	padding: 30px 0;
+}
+.below-nav-pad {
+	margin-top: 51px;
+	padding-top: 40px;
+}
+
+/* Elastislide */
+.elastislide-list li { /* overwrite elastislide */
+	width: 32%;
+}
+.elastislide-wrapper { /* overwrite elastislide */
+	background-color: transparent;
+	box-shadow: none;
+}
+.wagwep-container ul#portfolio-filter a { /* overwrite elastislide */
+	color: #3399ff;
+}
+.wagwep-container ul#portfolio-filter li.current a, ul#portfolio-filter a:hover { /* overwrite elastislide */
+	color: #f1592a;
+}
+.wagwep-container ul#portfolio-filter li.current a { /* overwrite elastislide */
+	font-weight: bold;
+	color: #fff;
+}
+.cd-top.cd-fade-out:hover { /* overwrite elastislide */
+	opacity:1;
+}
+.cd-container {
+  width: 90%;
+  max-width: 768px;
+  margin: 2em auto;
+}
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: #3399ff url(../images/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
 }
 
 /* Responsive */
-@media (max-width: 297px) {
+@media screen and (min-width: 768px) {
 	.below-nav-pad {
-		margin-top: 95px;
+		padding-top: 40px;
 	}
-}
-@media (min-width: 298px) {
-	.below-nav-pad {
-		margin-top: 51px;
-	}
-}
-@media (min-width: 768px) {
-	.below-nav-pad {
-		margin-top: 51px;
-	}
-	.blue-fw {
+	.white-fw, .grey-fw {
 		min-height: 350px;
+		padding: 30px 0;
 	}
-	.grey-fw {
+	.cd-top {
+	    right: 20px;
+	    bottom: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+	.below-nav-pad {
+		padding-top: 60px;
+	}
+	.white-fw, .grey-fw {
 		min-height: 350px;
+		padding: 50px 0;
 	}
+	.cd-top {
+	    height: 60px;
+	    width: 60px;
+	    right: 30px;
+	    bottom: 30px;
+  	}
 }
-@media (min-width: 992px) {
-}
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+	.white-fw, .grey-fw {
+		padding: 70px 0;
+	}
 }
