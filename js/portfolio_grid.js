@@ -5,12 +5,23 @@ $(function(){
         [
             {
                 'title'         : 'A.C.E.R.S.',
-                'description'   : ' Customized responsive website using skeleton framework & jQuery/JavaScript for menu and image slider.  Responsive image gallery (jQuery) manually added.',
+                'description'   : 'Customized responsive website using skeleton framework & jQuery/JavaScript for menu and image slider.  Responsive image gallery (jQuery) manually added.',
                 'thumbnail'     : ['images/small/acers1.jpg', 'images/small/acers2.jpg'],
                 'large'         : ['images/large/acers1.jpg', 'images/large/acers2.jpg'],
                 'button_list'   :
                 [
                     { 'title':'Website', 'url' : 'http://www.allcarengines.com.au' }
+                ],
+                'tags'          : ['Web']
+            },
+            {
+                'title'         : 'Carseldine Gardens',
+                'description'   : 'Custom responsive Wordpress website using Underscores blank theme. Custom jQuery popout, Google map with snazzy map design and API panning, popout vimeo video.',
+                'thumbnail'     : ['images/small/carseldine1.jpg'],
+                'large'         : ['images/large/carseldine1.jpg'],
+                'button_list'   :
+                [
+                    { 'title':'Website', 'url' : 'http://www.carseldinegardens.com.au' }
                 ],
                 'tags'          : ['Web']
             },

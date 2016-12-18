@@ -208,7 +208,7 @@ nav#porfolio-nav a {
 
 /* Responsive */
 @media screen and (max-width: 479px) {
-		#contact-form input[type="text"], textarea {
+	#contact-form input[type="text"], textarea {
 	    margin-right: 15%;
 	    width: 80%;
 	}
@@ -245,6 +245,9 @@ nav#porfolio-nav a {
 	.welcome-text p {
 		font-size: 2.5em;
 	}
+	.welcome-text-lrg {
+		font-size: 5.5rem;
+	}
 }
 
 @media screen and (min-width: 992px) {
@@ -263,6 +266,9 @@ nav#porfolio-nav a {
   	}
   	.welcome-text p {
 		font-size: 3.5em;
+	}
+	.welcome-text-lrg {
+		font-size: 7.5rem;
 	}
 }
 
